@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="icon" href="./static/figures/favicon.ico">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    
+    <title>Keyhan Gavahi, PhD | Research</title>
+
+    <link rel="stylesheet" href="./static/css/style.css?20210206H0555" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class=container>
+
+      <span class=name><a href="./index.html">Keyhan Gavahi, PhD</a></span>
+      <div class=navigation>
+        <ul>
+          <li><a href="./projects.html">Projects</a> </li>
+          <li><a href="./publications.html">Publications</a> </li>
+          <li><a href="./research.html">Research</a> </li>
+          <li><a href="./resume.html">Resume</a> </li>
+        </ul>
+      </div>
+
+      <div class=separator></div>
+
+
+		<div class=body>
+		  <div class=page>
+			<div class="container">
+			  <h2><strong>A deep learning-based framework for multi-source precipitation fusion</strong></h2>
+			  <p>
+				<img alt="Growth_baro_MyoFE" class="growth_pymyovent" src="./static/figures/Figure10.png">
+				Accurate quantitative precipitation estimation (QPE) is essential for various applications, including land surface modeling, flood forecasting, drought monitoring and prediction. In situ precipitation datasets, remote sensing-based estimations, and reanalysis products have heterogeneous uncertainty. Numerous models have been developed to merge precipitation estimations from different sources to improve the accuracy of QPE. However, many of these attempts are mainly focused on spatial or temporal correlations between various remote sensing sources and/or gauge data separately, and thus, the developed model cannot fully capture the inherent spatiotemporal dependencies that could potentially improve the precipitation estimations. In this study, we developed a general framework that can simultaneously merge and downscale multiple user-defined precipitation products by using rain gauge observations as target values. A novel deep learning-based convolutional neural network architecture, namely, the precipitation data fusion network (PDFN), that combines multiple layers of 3D-CNN and ConvLSTM was developed to fully exploit the spatial and temporal patterns of precipitation. This architecture benefits from techniques such as batch normalization, data augmentation schemes, and dropout layers to avoid overfitting and address skewed class proportions due to the highly imbalanced nature of the precipitation datasets. The results showed that the fused daily product remarkably improved the mean square error (MSE) and Pearson correlation coefficient (PCC) by 35% and 16%, respectively, compared to the best-performing product.
+			  </p>
+			  <!--<center><img alt="MyoFE" class="align-center" src="./static/figures/Figure6_dy.png" style="width: 500px; padding: 10px; margin: 10px 20px" /></center>-->
+
+			</div>
+			<div class=separator_line></div>
+		  </div>
+		</div>
+
+
+		<div class=body>
+		  <div class=page>
+			<div class="container">
+			  <h2><strong>Deep Learning for Crop Yield Forecasting</strong></h2>
+			  <p>
+				<img alt="Growth_baro_MyoFE" class="growth_pymyovent" src="./static/figures/Figure5_dy.png">
+				Crop yield forecasting is of great importance to crop market planning, crop insurance, harvest management, and optimal nutrient management. Commonly used approaches for crop prediction include but are not limited to conducting extensive manual surveys or using data from remote sensing. Considering the increasing amount of data provided by remote sensing imagery, this approach is becoming increasingly important for the task of crop yield forecasting and there is a need for more sophisticated approaches to extract the inherent spatiotemporal patterns of these data. Although considerable progress has been made in this field by using Deep Learning (DL) methods such as Convolutional Neural Networks (CNN), no study before has investigated the use of Convolutional Long Short-Term Memory (ConvLSTM) for crop yield forecasting. Here, we propose DeepYield, a combined structure, that integrates the ConvLSTM layers with the 3-Dimensional CNN (3DCNN) for more accurate and reliable spatiotemporal feature extraction. The models are trained by using county-based historical yield data and MODIS Land Surface Temperature (LST), Surface Reflectance (SR), and Land Cover (LC) data over 1836 primary soybean growing counites in the Contiguous United States (CONUS). The forecasting performance of the developed models is compared against the competing approaches including Decision Trees, CNN + GP, and CNN-LSTM and results indicate that DeepYield significantly outperforms these techniques and also performs better than both ConvLSTM and 3DCNN.
+			  </p>
+			  <!--<center><img alt="MyoFE" class="align-center" src="./static/figures/Figure6_dy.png" style="width: 500px; padding: 10px; margin: 10px 20px" /></center>-->
+
+			</div>
+			<div class=separator_line></div>
+		  </div>
+		</div>
+
+
+          <div class = "container">
+              <h2><strong>Downscaling SMAP Satellite Soil Moisture Using Machine Learning </strong></h2>
+              <p><img alt = "Growth_MyoFE" class="growth_pymyovent" src="./static/figures/full-BAMS-D-21-0016.1-f3.jpg" >
+                This study introduces a novel framework that utilizes ensemble learning techniques and incorporates atmospheric and geophysical data obtained from remote-sensing and ground-based observations. The objective is to downscale the Level 3 daily composite version (L3_SM_P) of SMAP radiometer soil moisture over the Continental United States, achieving a spatial resolution of 1 kilometer. To accomplish this, a Python package was created to automate the downloading and preprocessing of necessary datasets, employing the Random Forest method for downscaling the SMAP dataset from 36 kilometers to 1 kilometer. The proposed approach leverages various remotely sensed and in situ datasets, including soil texture, topography, and other relevant information. The downscaled product was rigorously validated against in situ soil moisture measurements collected from two high-density validation sites and 300 sparse soil moisture networks across the Continental United States. On average, the unbiased Root Mean Square Error between the downscaled SMAP soil moisture data and in-situ soil moisture observations satisfactorily met the required accuracy of 0.04 m3/m3 for SMAP soil moisture retrieval. Furthermore, additional statistical measures such as the Pearson correlation coefficient and bias exhibited favorable outcomes. The Python package developed for this purpose enables automated downloading and preprocessing of the essential datasets while utilizing the Random Forest method for downsampling the SMAP dataset from 36 kilometers to 1 kilometer.
+              </p>
+            </div>
+          <div class=separator_line></div>
+          <div class = "container">
+              <h2><strong>Multivariate Assimilation of Remotely Sensed Soil Moisture and Evapotranspiration Using Machine Learning and Parallel Computing</strong></h2>
+              <p><img alt = "Baro_MayoFE" class="growth_pymyovent" src="./static/figures/full-jhmD200057-f5.jpg" >
+                  In this study, we assimilate two remotely sensed datasets, namely, Soil Moisture Operational Product System (SMOPS) and MODIS evapotranspiration (MODIS16 ET), at 1-km spatial resolution, into the VIC land surface model by means of an evolutionary particle filter method. To achieve this, a fully parallelized framework based on model and domain decomposition using a parallel divide-and-conquer algorithm was implemented. The findings show improvement in soil moisture predictions by multivariate assimilation of both ET and SM as compared to univariate scenarios. In addition, monthly and weekly drought maps are produced using the updated root-zone soil moisture percentiles over the Apalachicola–Chattahoochee–Flint basin in the southeastern United States. The model-based estimates are then compared against the corresponding U.S. Drought Monitor (USDM) archive maps. The results are consistent with the USDM maps during the winter and spring season considering the drought extents; however, the drought severity was found to be slightly higher according to DA method. Comparing different assimilation scenarios showed that ET assimilation results in wetter conditions comparing to open-loop and univariate SM DA. The multivariate DA then combines the effects of the two variables and provides an in-between condition.
+
+              </p>
+          </div>
+          <div class=separator_line></div>
+          <div class = "container"> 
+            <h2><strong>Ensemble-based machine learning approach for improved leak detection in water mains</strong></h2>
+            <p><img alt = "Growth" class="growth_pymyovent" src="./static/figures/hydro-d-20-00093f06.png" >
+              This work presents an acoustic leak detection system for distribution water mains using machine learning methods. The problem is formulated as a binary classifier to identify leak and no-leak cases using acoustic signals. A supervised learning methodology has been employed using several detection features extracted from acoustic signals, such as power spectral density and time-series data. The training and validation data sets have been collected over several months from multiple cities across North America. The proposed solution includes a multi-strategy ensemble learning (MEL) using a gradient boosting tree (GBT) classification model, which has performed better in maximizing detection rate and minimizing false positives as compared with other classification models such as KNN, ANN, and rule-based techniques. Further improvements have been achieved using a multitude of GBT classifiers combined in a parallel ensemble method called bagging algorithm. The proposed MEL approach demonstrates a significant improvement in performance, resulting in a reduction of false positives reports by an order of magnitude.
+            </p>
+
+            
+ 
+
+
+          <!--<div class=separator_line></div>
+            <div class = "container">
+              <h2><strong>SYSTOLIC STRAIN ANALYSIS USING MRI IMAGES</strong></h2>
+              <p><img alt = "strain" class="mri_strain" src="./static/figures/MRI_strain.png" >
+                Cardiac magnetic resonance (CMR) imaging is a widely used method for assessing cardiac 
+                structure and function. Myocardial strain, which can be derived from CMR images, has been 
+                investigated as a possible diagnostic tool for estimating contractile function in the heart.
+                Recently, feature-tracking of cine images has been used to calculate systolic strain in 
+                patients with various types of heart disease in order to predict functional recovery and clinical outcomes.
+                Although mouse models are commonly used to enhance our understanding of cardiac disease, 
+                strain derived using feature-tracking of cine images has not been widely investigated in mice.
+              </p>
+            </div>
+
+          <div class=separator_line></div>
+
+            <div class = "container">
+              <h2><strong>BAROREFLEX CONTROL OF ARTERIAL PRESSURE</strong></h2>
+              <p><img alt = "Baroreflex" class="baroreflex_pymyovent" src="./static/figures/pymyovent_baro_only.png" >
+                Baroreceptors are sensors located at the carotid sinus and aortic arch which are parts of 
+                the short-term hemodynamics feedback control of arterial pressure within our body. The main
+                goal of baroreflex mechanism is to maintain arterial pressure within the normal range by regulation 
+                of cardiac function via sympathetic and parasympathetic neuron pathways. Thereby, having a model of  
+                hemodynamic feedback loop implemented into multiscale models of cardiovascular function is necessary.
+                PyMyoVent is a multiscale model of a single left ventricle that pumps blood around a systemic model of 
+                circulation. We have implemented a model of baroreflex control of arterial pressure to PyMyoVent
+                that regulates chronotropism, cell-level contractility, and vascular tone. 
+                  
+              </p>
+            </div>
+        </div>
+      </div>-->
+
+      <div class=footer>
+        <p>&copy; Copyright <script language="JavaScript">var date = new Date(); document.write(date.getFullYear());</script> by Keyhan Gavahi</p>
+        <div class=social style="font-size: 27px;">
+          <ul>
+            <script language="JavaScript">
+              front = 'kgavahi';
+              school = 'crimson';
+              tld = 'edu';
+              document.write('<a href=\"mailto:' + front + '@' + school + '.ua.' + tld + '\" target=\"_blank\">');
+            </script>
+            <li><i class="fa fa-envelope"></i> </li>
+            
+            <a href="https://twitter.com/GavahiKeyhan" target="_blank"> <li> <i class="fa fa-twitter" style="color:#2AA3ED"></i> </li> </a>
+            <a href="https://github.com/kgavahi" target="_blank"> <li> <i class="fa fa-github" style="color:black"></i> </li> </a>
+            <a href="https://scholar.google.com/citations?user=M9_KNXAAAAAJ&hl=en" target="_blank"> <li> <i class="ai ai-google-scholar" style="color:#288AE2"></i> </li> </a> 
+            <a href="https://www.linkedin.com/in/kayhangavahi/" target="_blank"> <li> <i class="fa fa-linkedin-square" style="color:black"></i> </li> </a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
